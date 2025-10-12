@@ -1,0 +1,11 @@
+1. command used to build docker image 
+ docker compose -f 'kafka\docker-compose.yml' up -d --build 
+
+2. recreate the container if any changes occur:
+    docker compose -f kafka/docker-compose.yml down
+    docker compose -f kafka/docker-compose.yml up -d
+
+3. just stop the container :
+    docker stop kafka zookeeper
+4. just restart the container
+    docker restart kafka zookeeper
