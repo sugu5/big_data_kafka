@@ -25,4 +25,4 @@ def create_topic(topic_name, num_partitions=2, replication_factor=1):
 
 if __name__ == "__main__":
     # Create a new topic
-    create_topic("test-topic")
+    create_topic("stock_stream")
