@@ -9,3 +9,4 @@
     docker stop kafka zookeeper
 4. just restart the container
     docker restart kafka zookeeper
+
