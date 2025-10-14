@@ -3,7 +3,7 @@ import json
 
 # Create Kafka consumer
 consumer = KafkaConsumer(
-    'stock_stream',        
+    'crypto_stream',        
     bootstrap_servers=['localhost:9092'],
     auto_offset_reset='earliest',
     enable_auto_commit=True,
