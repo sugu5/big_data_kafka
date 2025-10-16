@@ -41,8 +41,7 @@ services:
     ports:
       - "8081:8081"
     environment:
-      # CRITICAL: Use the internal listener (INTERNAL://kafka:29092) for connection
-      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: "INTERNAL://kafka:29092"
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: "PLAINTEXT://kafka:29092"
       SCHEMA_REGISTRY_HOST_NAME: "schema-registry"
       SCHEMA_REGISTRY_LISTENERS: "http://0.0.0.0:8081"
     depends_on:
